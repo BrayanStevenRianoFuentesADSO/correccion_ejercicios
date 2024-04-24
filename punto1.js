@@ -24,7 +24,8 @@ export function validarnum() {
 
   while (num_correcto == false) {
 
-    if (tipo == 1) {
+
+    if (tipo == 1) {   /**American Express */
       let numero = prompt("Ingrese el número de su tarjeta American Express");
       let validar1 = /^[3][4][0-9]{13}$/;
       let validar2 = /^[3][7][0-9]{13}$/;
@@ -37,7 +38,7 @@ export function validarnum() {
       }
     }
 
-    if (tipo == 2) {
+    if (tipo == 2) { /**Diners Club */
       let numero = prompt("Ingrese el número de su tarjeta Diners Club");
       let validar1 = /^[3][0][0][0-9]{11}$/;
       let validar2 = /^[3][0][5][0-9]{11}$/;
@@ -52,7 +53,7 @@ export function validarnum() {
       }
     }
 
-    if (tipo == 3) {
+    if (tipo == 3) { /**Discover */
       let numero = prompt("Ingrese el número de su tarjeta Discover");
       let validar1 = /^[6][0][1][1][0-9]{12}$/;
 
@@ -64,7 +65,7 @@ export function validarnum() {
       }
     }
 
-    if (tipo == 4) {
+    if (tipo == 4) { /**Mastercard */
       let numero = prompt("Ingrese el número de su tarjeta Mastercard");
       let validar1 = /^[5][1][0-9]{12}$/;
       let validar2 = /^[5][5][0-9]{12}$/;
@@ -77,7 +78,7 @@ export function validarnum() {
       }
     }
 
-    if (tipo == 5) {
+    if (tipo == 5) { /**Visa*/
       let numero = prompt("Ingrese el número de su tarjeta Visa");
       let validar1 = /^[4][0-9]{15}$/;
 

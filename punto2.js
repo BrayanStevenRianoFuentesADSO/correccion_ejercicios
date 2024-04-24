@@ -8,7 +8,7 @@
  e.Calcular el promedio de números pares
  Para este ejercicio se solicita trabajar con módulos. */
 
- export function operaciones() {
+export function operaciones() {
   let cant_nums = parseInt(prompt("Cuantos numeros desea ingresar"));
   let array_nums = [];
   let suma = 0;
@@ -24,14 +24,14 @@
 
   let operacion = prompt("Que operacion desea realizar: Sumar los números (a) Contar los números primos (b) Contar los números pares (c) Calcular el promedio de los números primos (d) Calcular el promedio de números pares (e)");
 
-  if (operacion == "a") {
+  if (operacion == "a") { /**Sumar los números */
     for (let cont = 0; cont < array_nums.length; cont++) {
       suma += array_nums[cont];
     }
     alert("el resultado de la suma es " + suma);
   }
 
-  if (operacion == "b") {
+  if (operacion == "b") { /**Contar los números primos */
     for (let cont = 0; cont < array_nums.length; cont++) {
       let esprimo = true;
       for (let divisor = 2; divisor < array_nums[cont]; divisor++) {
@@ -46,7 +46,7 @@
     alert("hay " + cont_primos + " numeros primos");
   }
 
-  if (operacion == "c") {
+  if (operacion == "c") { /**Contar los números pares */
     for (let cont = 0; cont < array_nums.length; cont++) {
       if (array_nums[cont] % 2 == 0) {
         cont_pares++;
@@ -56,7 +56,7 @@
   }
 
 
-  if (operacion == "d") {
+  if (operacion == "d") { /**Calcular el promedio de los números primos */
     for (let cont = 0; cont < array_nums.length; cont++) {
       let esprimo = true;
       for (let divisor = 2; divisor < array_nums[cont]; divisor++) {
@@ -73,8 +73,8 @@
     alert("el promedio de numeros primos es " + prom_primos);
   }
 
-  
-  if (operacion == "e") {
+
+  if (operacion == "e") { /**Calcular el promedio de números pares */
     for (let cont = 0; cont < array_nums.length; cont++) {
       if (array_nums[cont] % 2 == 0) {
         cont_pares++;
