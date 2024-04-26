@@ -16,8 +16,8 @@ crédito. */
 
 
 
-export function validarnum() {
-  let tipo = parseInt(prompt("Ingrese el tipo de tarjeta: American Express (1), Diners Club (2), Discover (3), Mastercard (4), Visa (5)"));
+export function validarnum(tipo) {
+  
 
 
   let num_correcto = false
@@ -56,8 +56,10 @@ export function validarnum() {
     if (tipo == 3) { /**Discover */
       let numero = prompt("Ingrese el número de su tarjeta Discover");
       let validar1 = /^[6][0][1][1][0-9]{12}$/;
+      let validar2 = /^[6][4][4][0-9]{13}$/;
+      let validar3 = /^[6][4][5][0-9]{13}$/;
 
-      if (validar1.test(numero)) {
+      if (validar1.test(numero)||validar2.test(numero)||validar3.test(numero)) {
         alert("NUMERO CORRECTO");
         num_correcto = true
       } else {
@@ -67,10 +69,12 @@ export function validarnum() {
 
     if (tipo == 4) { /**Mastercard */
       let numero = prompt("Ingrese el número de su tarjeta Mastercard");
-      let validar1 = /^[5][1][0-9]{12}$/;
-      let validar2 = /^[5][5][0-9]{12}$/;
-
-      if (validar1.test(numero) || validar2.test(numero)) {
+      let validar1 = /^[5][1][0-9]{14}$/;
+      let validar2 = /^[5][2][0-9]{14}$/;
+      let validar3 = /^[5][3][0-9]{14}$/;
+      let validar4 = /^[5][4][0-9]{14}$/;
+      let validar5 = /^[5][5][0-9]{14}$/;
+      if (validar1.test(numero) || validar2.test(numero)|| validar3.test(numero) ||validar4.test(numero) ||validar5.test(numero)) {
         alert("NUMERO CORRECTO");
         num_correcto = true
       } else {

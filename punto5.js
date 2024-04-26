@@ -10,7 +10,7 @@
 // para que el usuario lo solucione y continue realizando los cálculos básicos de las matemáticas.
 
 
-export function calculadora() {
+export function calculadora(a,b) {
   class Calcular {
     static sumar(a, b) {
       return a + b;
@@ -33,8 +33,7 @@ export function calculadora() {
     }
   }
 
-  let a = parseInt(prompt("Ingrese el valor de A"));
-  let b = parseInt(prompt("Ingrese el valor de B"));
+
 
 
   if (isNaN(a) || isNaN(b)) {

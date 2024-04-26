@@ -1,3 +1,5 @@
 import { operaciones } from "./punto2.js"; 
 
-operaciones();
+let cant_nums = parseInt(prompt("Cuantos numeros desea ingresar"));
+
+operaciones(cant_nums);

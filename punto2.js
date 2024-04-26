@@ -8,8 +8,8 @@
  e.Calcular el promedio de números pares
  Para este ejercicio se solicita trabajar con módulos. */
 
-export function operaciones() {
-  let cant_nums = parseInt(prompt("Cuantos numeros desea ingresar"));
+export function operaciones(cant_nums) {
+  
   let array_nums = [];
   let suma = 0;
   let cont_primos = 0;
